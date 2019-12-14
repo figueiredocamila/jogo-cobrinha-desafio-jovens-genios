@@ -1,0 +1,55 @@
+*{
+    /*background-image: url(/home/camila/Documentos/desafio-jg/img/original.gif);
+    background-repeat: repeat;*/
+}
+
+@font-face{
+    font-family: Game-Over;
+    src: url(fonts/game_over.ttf);
+
+    font-family: Gameplay;
+    src: url(fonts/Gameplay.ttf); 
+}
+
+body{
+    margin: 0;
+    overflow:hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 20px 0;
+}
+
+.frist{
+    font-family: Gameplay;
+    font-size: 50px;
+    font-weight: 100px;
+    color: white;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.second{
+    font-family: Gameplay;
+    font-size: 50px;
+    font-weight: 100px;
+    color: #0bff01;
+    text-align: center;
+}
+/*
+.container{
+    position: relative;
+}
+
+.menu{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    margin: auto;
+}
+
