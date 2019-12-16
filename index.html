@@ -1,34 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <meta charset="UTF-8">
+        <meta charset = "UTF-8">
         <title>Jogo da Cobrinha</title>
-        <link rel="icon" href="img/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel = "icon" href = "img/favicon.png" type = "image/x-icon">
+        <link rel = "stylesheet" type = "text/css" href = "css/index.css">
     </head>
     <body>
         <header>
-            <p class="frist">S p a c e</p>
-            <p class="second">C o b r i n h a</p>
+            <p class = "frist">S p a c e</p>
+            <p class = "second">C o b r i n h a</p>
         </header>
+        <div class = "menu" id="menu">
+                <div class="selectPlayer">
+                    <p>Select player</p>
+                </div>
+                <button data-players="1" class = "optionPlayer">
+                    <p>single player</p>
+                </button>
+                <button data-players="2" class = "optionPlayer">
+                    <p>Multiplayer</p>
+                </button>
+        </div>
+        <div class="manual hidden" id="manual">
+            <p class="rules">Rules</p>
+            <p>The aim of the game is to be the first player to eat the fruit by moving the snake across the board.</p>
+            <p>The player who have eaten the fruit score 100 points.</p>
+            <p>If the snake touch its tail the game's over.</p>
+            <div class="controls hidden">
+                <div class="playerCommands">
+                    <p class="firstPlayer">Frist Player</p>
+                    <div class="line"> 
+                        <div class="keyBox"> 
+                            <p>up</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="keyBox"> 
+                            <p>left</p>
+                        </div>
+                        <div class="keyBox"> 
+                            <p>down</p>
+                        </div>
+                        <div class="keyBox"> 
+                            <p>right</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="playerCommands">
+                    <p class="secondPlayer">Second Player</p>
+                    <div class="line"> 
+                        <div class="keyBox"> 
+                            <p>W</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="keyBox"> 
+                            <p>A</p>
+                        </div>
+                        <div class="keyBox"> 
+                            <p>S</p>
+                        </div>
+                        <div class="keyBox"> 
+                            <p>D</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="startGame" id="startGame">
+                <p>Start</p>
+            </div>
+        </div>
 
-        <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> -->
-
-        <!-- <audio id="player" autoplay loop> -->
-            <!-- <source src="audio/game.mp3" type="audio/mpeg"> -->
-        <!-- </audio> -->
-
-       <!--- <iframe src=”audio/game.mp3″ type=”audio/mp3″ allow=”autoplay” id=”audio”>
-        </iframe>
-
-        <audio id ="game" controls autoplay loop>
-            <source src="audio/game.mp3" type="audio/mpeg">  
-        </audio> -->
-
-        <div class="contanier">
-            <script src="js/music.js"></script>
-            <canvas id="arena" width="500" height="500"></canvas>
-            <script src="js/index.js"></script>
+        <div class = "contanier">
+            <script src = "js/music.js"></script>
+            <canvas id = "arena" width = "500" height = "500"></canvas>
+            <script src = "js/index.js"></script>
         </div>
         
 

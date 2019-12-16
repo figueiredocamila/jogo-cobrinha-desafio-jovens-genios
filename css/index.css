@@ -1,8 +1,3 @@
-*{
-    background-image: url(/home/camila/Documentos/desafio-jg/img/original.gif);
-    background-repeat: repeat;
-}
-
 @font-face{
     font-family: Game-Over;
     src: url(fonts/game_over.ttf);
@@ -12,6 +7,8 @@
 
 body{
     margin: 0;
+    background-image: url(/home/camila/Documentos/desafio-jg/img/original.gif);
+    background-repeat: repeat;
 }
 
 header{
@@ -43,8 +40,133 @@ header{
     border: #0bff01 solid 3px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;  
 }
 
+.container{
+    position: relative;
+}
+
+.menu, .manual{
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    height: 500px;
+    border: #0bff01 solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Gameplay;
+    color: white
+
+}
+
+.menu {}
+
+.manual {
+    font-size: 15px;
+    text-align: center;
+}
+
+.rules{
+    color: #0bff01;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+}
+
+.firstPlayer{
+    color: blue;
+    text-align: center;
+}
+
+.secondPlayer{
+    color: magenta;
+    text-align: center;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.playerCommands{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.startGame{
+    width: 200px;
+    height: 50px;
+    font-family: Gameplay;
+    font-size: 20px;
+    color: white;
+    border: #0bff01 solid 3px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.menu.hidden,
+.manual.hidden {
+    display: none;
+}
+
+.selectPlayer{
+    font-family: Gameplay;
+    font-size: 40px;
+    font-weight: 100px;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.optionPlayer{
+    width: 300px;
+    font-family: Gameplay;
+    font-size: 30px;
+    font-weight: 100px;
+    color: white;
+    border: #0bff01 solid 3px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.optionPlayer:hover,
+.startGame:hover{
+    background-color: #0bff01;
+}
+
+
+.keyBox{
+    border: #fff solid 1px;
+    width: 55px;
+    height: 55px;
+    color: #fff;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+
+}
 
