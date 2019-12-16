@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
         <title>Jogo da Cobrinha</title>
-        <link rel = "icon" href = "img/favicon.png" type = "image/x-icon">
-        <link rel = "stylesheet" type = "text/css" href = "css/index.css">
+        <link rel="icon" href="css/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body>
         <header>
-            <p class = "frist">S p a c e</p>
-            <p class = "second">C o b r i n h a</p>
+            <p class="frist">S p a c e</p>
+            <p class="second">C o b r i n h a</p>
         </header>
-        <div class = "menu" id="menu">
-                <div class="selectPlayer">
-                    <p>Select player</p>
-                </div>
-                <button data-players="1" class = "optionPlayer">
-                    <p>single player</p>
-                </button>
-                <button data-players="2" class = "optionPlayer">
-                    <p>Multiplayer</p>
-                </button>
+        <div class="menu" id="menu">
+            <div class="selectPlayer">
+                <p>Select player</p>
+            </div>
+            <button data-players="1" class="optionPlayer">
+                <p>single player</p>
+            </button>
+            <button data-players="2" class="optionPlayer">
+                <p>Multiplayer</p>
+            </button>
         </div>
         <div class="manual hidden" id="manual">
             <p class="rules">Rules</p>
             <p>The aim of the game is to be the first player to eat the fruit by moving the snake across the board.</p>
-            <p>The player who have eaten the fruit score 100 points.</p>
-            <p>If the snake touch its tail the game's over.</p>
+            <p>The player who have eaten the fruit scored 100 points.</p>
+            <p>If the snake touch its tail, the game's over.</p>
             <div class="controls hidden">
                 <div class="playerCommands">
                     <p class="firstPlayer">Frist Player</p>
@@ -71,15 +71,10 @@
                 <p>Start</p>
             </div>
         </div>
-
-        <div class = "contanier">
-            <script src = "js/music.js"></script>
-            <canvas id = "arena" width = "500" height = "500"></canvas>
-            <script src = "js/index.js"></script>
+        <div class="contanier">
+            <canvas id="arena" width="500" height="500"></canvas>
+            <script src="js/index.js"></script>
         </div>
-        
-
-
     </body>
 </html>
 
